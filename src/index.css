@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+ 
+
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+    width:90%;
+    margin:auto;
+}
+
+
+
+
+.link:hover{
+    color:#ff5252;
+}
