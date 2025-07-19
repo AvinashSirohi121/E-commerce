@@ -1,0 +1,52 @@
+
+.navbar{
+    padding: 0.5rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_col1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
+.navbar_col1:hover{
+    background-color: rgb(242, 242, 242);
+    cursor: pointer;
+    transition: all ease-in;
+}
+
+.menuHeading{
+    font-weight:800 ;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_col2{
+    display: flex;
+    gap:1rem;
+}
+.navbar_col2_list{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    gap:1rem;
+}
+.navbar_col2_listItems{
+    font-size: 15px;
+}
+.navbar_col3{
+
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    gap:1rem;
+    width: 20%;
+}
