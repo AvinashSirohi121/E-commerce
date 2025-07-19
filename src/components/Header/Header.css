@@ -1,3 +1,51 @@
+
+
+.login-register {
+    display: flex;
+    gap:0.5rem
+}
+
+.link {
+  color:rgb(85, 85, 85);
+  text-decoration-line: none;
+  transition: all ease-in-out;
+}
+
+.wishList-cart {
+  display: flex;
+  gap: 0.8rem;
+}
+.header_col1 {
+
+}.header_col2 {
+width: 40%;
+margin-left: 6rem;
+}
+.header_col3 {
+  margin-left: 4rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: right;
+  align-items: center;
+}
+
+.wishList-cart-button{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.wishList-cart-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.5rem ;
+    border-radius: 50px;
+}
 .header{
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 1rem 0rem;
 }
