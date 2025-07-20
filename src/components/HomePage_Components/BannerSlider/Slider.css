@@ -1,0 +1,8 @@
+.sliderImage{
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    max-width: 90%;
+    max-height: 70%;
+    background-color: aqua;
+}
