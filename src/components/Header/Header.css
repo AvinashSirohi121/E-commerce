@@ -13,7 +13,7 @@
 
 .wishList-cart {
   display: flex;
-  gap: 0.8rem;
+  gap: 0.5rem;
 }
 .header_col1 {
 
@@ -22,9 +22,9 @@ width: 40%;
 margin-left: 6rem;
 }
 .header_col3 {
-  margin-left: 4rem;
+  margin-left: 6.5rem;
   display: flex;
-  gap: 1.5rem;
+  gap: 0.5rem;
   justify-content: right;
   align-items: center;
 }
@@ -38,7 +38,6 @@ margin-left: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0.5rem ;
     border-radius: 50px;
 }
 .header{

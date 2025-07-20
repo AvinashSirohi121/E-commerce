@@ -32,7 +32,7 @@ const Header = () => {
                             </p>
                         </div>
                         <div className='cols2 '>
-                                <ul className='flex gap-[2rem] justify-between items-center '>
+                                <ul className='flex gap-[1rem] justify-between items-center '>
                                     <li className='list-none'>
                                         <Link to="/help-center"
                                         className='text-[14px] link font-[500] transition no-underline'
