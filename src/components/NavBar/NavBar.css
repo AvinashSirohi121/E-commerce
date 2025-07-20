@@ -37,10 +37,11 @@
     width: 80%;
     list-style: none;
     display: flex;
-    gap:1rem;
+    gap:1.7rem;
 }
 .navbar_col2_listItems{
     font-size: 15px;
+    font-weight: 500;
 }
 .navbar_col3{
 
