@@ -1,0 +1,56 @@
+.adsBannerSlide {
+    position: relative;
+      border-radius: 10px;
+    overflow: hidden; 
+}
+.adsBannerSlide2 {
+    position: relative;
+      border-radius: 10px;
+    overflow: hidden; 
+}
+
+.adsBannerSlideImage {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    will-change: transform;
+    display: block;
+}
+.adsBannerSlideImage2 {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    will-change: transform;
+    display: block;
+    width: 350px;
+}
+
+.adsBannerSlide:hover .adsBannerSlideImage {
+    transform: scale(1.08) perspective(600px) translateZ(20px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 2;
+    border-radius: 10px;
+}
+.adsBannerSlide2:hover .adsBannerSlideImage2 {
+    animation: rotateOnce 0.3s forwards;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 2;
+    border-radius: 10px;
+    transition: all 2s ease-out
+}
+
+@keyframes rotateOnce {
+    to {
+        transform: scale(1.05) perspective(600px) translateZ(20px) rotateZ(2deg);
+    }
+}
+
+.adsBannerSlideImage-text{
+    position:absolute;
+    z-index: 9;
+    top: 20%;
+    /* right: 10%; */
+    color: black;
+
+}
+.adsBannerSlide2{
+    width: full;
+}
