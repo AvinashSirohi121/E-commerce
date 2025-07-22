@@ -1,0 +1,18 @@
+.freeshipping{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+     border-radius: 10px;
+     padding: 1rem 2rem;
+     color: #2a2a2a;
+     align-items: center;
+     width: 80%;
+    height: 80px;
+}
+.freeshipping-Parent{
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
