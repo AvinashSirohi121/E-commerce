@@ -6,19 +6,26 @@ import CategorySlider from '../../components/HomePage_Components/CategorySlider/
 import AdsBannerSlider from '../../components/HomePage_Components/AdsBannerSlider/AdsBannerSlider'
 import AdsBannerSlider2 from '../../components/HomePage_Components/AdsBannerSlider/AdsBannerSlider2'
 import "./Home.css"
+import ProularProducts from '../../components/HomePage_Components/Popular_Products/ProularProducts'
 import FreeShipping from '../../components/HomePage_Components/FreeShipping/FreeShipping'
 const Home = () => {
   return (
     <div>
       <Header/>
       <Navbar/>
+      
       <div className='home'>
         <Slider/>
         <CategorySlider className="py-8"/>
       </div>
+      <section className='py-8 mb-20'>
+            <ProularProducts/>
+        </section>
        <section className='middleSection'>
         <FreeShipping/>
+        
         <AdsBannerSlider/>
+        
         <AdsBannerSlider2/>
       </section>
      
