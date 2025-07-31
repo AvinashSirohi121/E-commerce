@@ -8,7 +8,9 @@ import AdsBannerSlider2 from '../../components/HomePage_Components/AdsBannerSlid
 import "./Home.css"
 import ProularProducts from '../../components/HomePage_Components/Popular_Products/ProularProducts'
 import FreeShipping from '../../components/HomePage_Components/FreeShipping/FreeShipping'
+import Footer from '../../components/HomePage_Components/Footer/Footer'
 const Home = () => {
+
   return (
     <div>
       <Header/>
@@ -25,11 +27,12 @@ const Home = () => {
         <FreeShipping/>
         
         <AdsBannerSlider/>
-        
+          <ProularProducts/>
         <AdsBannerSlider2/>
       </section>
      
-      Home
+      <Footer/>
+     
     </div>
   )
 }
