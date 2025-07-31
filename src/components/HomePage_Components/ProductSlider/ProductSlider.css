@@ -1,6 +1,11 @@
 .productSlider{
-    gap:1rem;
+    gap:2rem;
     display: flex;
     margin-top: 1rem;
-
+   
+    padding: 1rem;
+}
+.mySwiper-product{
+    padding: 1rem;
+    padding-bottom: 2rem;
 }
