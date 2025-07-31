@@ -5,6 +5,8 @@ import { TiStarOutline } from "react-icons/ti";
 import { TiStarHalfOutline } from "react-icons/ti";
 import { TiStarFullOutline } from "react-icons/ti";
 import "./ProductItem.css"
+import { MdZoomOutMap } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
 
 const ProductItem = ({product}) => {
 
@@ -28,7 +30,16 @@ const ProductItem = ({product}) => {
   return (
     <div className='product'>
         <p className='product-discount'>{`${Math.ceil(product?.discountPercentage)}%`}</p>
+       
         <img className='product-image w-[80%]' src={product?.thumbnail} alt={product?.title}/>
+        
+         <div className='productImage-hover'>
+            <div className='productImage-hover-items'> <MdZoomOutMap className='productImage-hover-item' /></div>
+            <div className='productImage-hover-items'><FaRegHeart className='productImage-hover-item'/></div>
+           
+            
+        </div>
+        
         <div className='product-info'>
             <h4 className='product-title'>{`${product?.title.substring(0,20)}...`}</h4>
             <p className='product-desc'>{`${product?.description.substring(0,30)}...`}</p>
