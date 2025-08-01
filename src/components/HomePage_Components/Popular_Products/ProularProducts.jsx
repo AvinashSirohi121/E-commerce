@@ -50,7 +50,7 @@ const ProularProducts = () => {
 
             </div>
 
-            <ProductSlider items={5}/>
+            <ProductSlider items={7}/>
           </div>
    
   )
