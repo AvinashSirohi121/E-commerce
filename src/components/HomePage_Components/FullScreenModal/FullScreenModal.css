@@ -1,0 +1,52 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(43, 37, 33, 0.777);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  scroll-behavior: unset;
+}
+
+
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 5px;
+  min-height: 80%;
+  min-width: 80%;
+  box-shadow: 0 20px 30px rgba(62, 62, 62, 0.852);
+  animation: scaleIn 0.3s ease;
+}
+
+.close-button {
+  padding: 5px;
+  display: flex;
+  background: #f2f2f2;
+  color: rgb(159, 159, 159);
+  border: none;
+  font-size: 25px;
+  border-radius: 50%;
+  position: absolute;
+top: -2%;
+right: 1%;
+  cursor: pointer;
+}
+.close-button:hover{
+    background-color: #ff5252;
+    color: white;
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
