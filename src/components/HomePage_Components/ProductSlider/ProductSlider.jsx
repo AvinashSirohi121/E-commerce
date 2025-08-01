@@ -1811,14 +1811,14 @@ const ProductSlider = (props) => {
         <div className='productSlider'>
             <Swiper
                 
-                slidesPerView={props.items+1}
+                slidesPerView={props.items}
                 spaceBetween={10}
                 navigation={true}
                 modules={[Navigation, Autoplay]}
                 className='mySwiper-product'
                 loop={true}
                 autoplay={{
-                    delay: 4000,
+                    delay: 8000,
                     disableOnInteraction: false,
                 }}
             >

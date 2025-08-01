@@ -53,3 +53,81 @@ body{
 .MuiTab-textColorPrimary.Mui-selected{
   color: #ff5252 !important;
 }
+.swiper-button-prev{
+  font-size: 20px !important;
+  background-color: #dbd9d9 !important;
+  padding: 20px;
+ color: rgb(89, 89, 89) !important;
+  border-radius: 50%;
+  margin-left: -10px;
+  font-weight: bolder;
+  opacity: 0.5;
+}
+.swiper-button-prev:hover{
+  background-color: #818080 !important;
+  color: white !important;
+  transition: all 0.4s ease-in-out;
+  
+}
+.swiper-button-next{
+  font-size: 20px !important;
+  background-color: #e2e2e2 !important;
+  padding: 20px;
+ color: rgb(89, 89, 89) !important;
+  border-radius: 50%;
+  margin-right: -10px;
+  font-weight: bolder;
+  opacity: 0.5;
+}
+.swiper-button-next:hover{
+  background-color: #ff5252 !important;
+  color: white !important;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  
+}
+:root {
+    --swiper-navigation-size: 20px !important;
+}
+
+/* Ensure full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Modal overlay styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 15, 15, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal content */
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95);
+  animation: scaleIn 0.3s ease forwards;
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+  }
+}

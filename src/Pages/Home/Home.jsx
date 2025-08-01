@@ -20,7 +20,7 @@ const Home = () => {
         <Slider/>
         <CategorySlider className="py-8"/>
       </div>
-      <section className='py-8 mb-20'>
+      <section className='py-8 '>
             <ProularProducts/>
         </section>
        <section className='middleSection'>
