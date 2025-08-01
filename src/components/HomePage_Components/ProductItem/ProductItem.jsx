@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MdOutlineShoppingCart } from "react-icons/md";
 
 import { TiStarOutline } from "react-icons/ti";
@@ -7,8 +7,11 @@ import { TiStarFullOutline } from "react-icons/ti";
 import "./ProductItem.css"
 import { MdZoomOutMap } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
+import FullscreenModal from '../FullScreenModal/FullScreenModal';
 
 const ProductItem = ({product}) => {
+  const [showModal,setShowModal]= useState(false);
+  const [productDetails, setProductDetails] = useState(null);
 
     const renderStars = (rating) => {
   const stars = [];
@@ -27,14 +30,20 @@ const ProductItem = ({product}) => {
 
   return stars;
 };
+
+const zoomItem =(item)=>{
+  setShowModal(true)
+  setProductDetails(item)
+}
   return (
+    <div className='' style={{position:"relative"}}>
     <div className='product'>
         <p className='product-discount'>{`${Math.ceil(product?.discountPercentage)}%`}</p>
        
         <img className='product-image w-[80%]' src={product?.thumbnail} alt={product?.title}/>
         
          <div className='productImage-hover'>
-            <div className='productImage-hover-items'> <MdZoomOutMap className='productImage-hover-item' /></div>
+            <div className='productImage-hover-items'> <MdZoomOutMap onClick={()=>zoomItem(product)} className='productImage-hover-item' /></div>
             <div className='productImage-hover-items'><FaRegHeart className='productImage-hover-item'/></div>
            
             
@@ -61,6 +70,17 @@ const ProductItem = ({product}) => {
 
             </div>
     </div>
+
+     
+       {showModal && (
+        <FullscreenModal 
+        onClose={() => {setShowModal(false);setProductDetails(null)}} 
+        productDetails={productDetails}
+        setProductDetails={setProductDetails}
+        />
+      )}
+    </div>
+    
   )
 }
 

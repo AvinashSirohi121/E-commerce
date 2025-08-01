@@ -5,7 +5,7 @@
     max-width: 250px;
     height: 380px;
     border: 1px solid rgb(199, 199, 199);
-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+/* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
     position: relative;
     overflow: hidden;
 }
@@ -19,12 +19,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 
     background-color: rgb(217, 217, 217);
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
-.product-image:hover{
-    transform: scale(1.08) perspective(600px) translateZ(20px);
-    /* box-shadow: 0 8px 24px rgba(0,0,0,0.15); */
-    z-index: 2;
-   
-}
+
 .product-price{
     display: flex;
     justify-content: space-between;
@@ -130,4 +125,82 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 
     color: white;
     cursor: pointer;
    
+}
+.App {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.open-modal-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.open-modal-button:hover {
+  background-color: #2980b9;
+}
+
+/* Full screen overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 15, 15, 0.75); /* dark misty effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal box */
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95);
+  animation: scaleIn 0.3s ease forwards;
+}
+
+/* Close button */
+.close-button {
+  margin-top: 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #c0392b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    background-color: rgba(15, 15, 15, 0);
+  }
+  to {
+    background-color: rgba(15, 15, 15, 0.75);
+  }
+}
+
+@keyframes scaleIn {
+  to {
+    transform: scale(1);
+  }
 }
