@@ -22,10 +22,7 @@ return (
             navigation={true}
             modules={[Navigation, Autoplay]}
             className='mySwiper'
-            autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-            }}
+            
         >
             {adsBannerSlider.map((item, index) => (
                 <SwiperSlide key={index} className='adsBannerSlide' style={{ position: 'relative' }}>
